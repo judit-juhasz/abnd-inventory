@@ -16,6 +16,10 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <provider
+            android:name=".data.PinventoryProvider"
+            android:authorities="name.juhasz.judit.udacity.pinventory"
+            android:exported="false" />
     </application>
 
 </manifest>
