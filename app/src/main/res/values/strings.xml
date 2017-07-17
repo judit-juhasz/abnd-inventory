@@ -3,8 +3,6 @@
     <string name="activity_add_product_label">Add a Product</string>
     <string name="activity_edit_product_label">Edit Product</string>
 
-    <string name="action_insert_dummy_data">Insert Dummy Data</string>
-    <string name="action_delete_all_entries">Delete All Products</string>
     <string name="action_save">Save</string>
     <string name="action_delete">Delete</string>
 
