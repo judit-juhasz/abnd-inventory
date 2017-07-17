@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="@dimen/margin_padding_normal">
+
+    <LinearLayout
+        android:layout_width="@dimen/view_zero_width"
+        android:layout_weight="3"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textColor="@color/colorPrimaryText"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_price"
+                style="@style/SecondaryText"/>
+
+            <TextView
+                android:text="@string/tv_price_label_unit"
+                android:layout_toRightOf="@id/tv_price"
+                android:paddingLeft="@dimen/padding_item_data"
+                style="@style/SecondaryText"/>
+
+            <TextView
+                style="@style/SecondaryText"
+                android:text="/"
+                android:paddingLeft="@dimen/padding_item_data"
+                android:paddingRight="@dimen/padding_item_data"/>
+
+            <TextView
+                android:id="@+id/tv_quantity"
+                style="@style/SecondaryText"
+                android:paddingLeft="@dimen/padding_item_data"
+                android:paddingRight="@dimen/padding_item_data"/>
+
+            <TextView
+                style="@style/SecondaryText"
+                android:text="@string/tv_in_stock" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/b_sale"
+        android:layout_width="@dimen/view_zero_width"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:text="@string/button_sale"
+        android:onClick="saleProduct"/>
+
+</LinearLayout>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="padding_item_data">4dp</dimen>
+    <dimen name="view_zero_width">0dp</dimen>
+    <dimen name="padding_empty_textview">16dp</dimen>
+    <dimen name="margin_padding_normal">16dp</dimen>
+    <dimen name="margin_padding_large">40dp</dimen>
+    <dimen name="margin_padding_small">8dp</dimen>
+
+    <dimen name="product_image_size">100dp</dimen>
+</resources>

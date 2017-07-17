@@ -1,3 +1,59 @@
-<resources>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <string name="app_name">Pinventory</string>
+    <string name="activity_add_product_label">Add a Product</string>
+    <string name="activity_edit_product_label">Edit Product</string>
+
+    <string name="action_insert_dummy_data">Insert Dummy Data</string>
+    <string name="action_delete_all_entries">Delete All Products</string>
+    <string name="action_save">Save</string>
+    <string name="action_delete">Delete</string>
+
+    <string name="editor_error_fields_blank">All fields and an image are required</string>
+
+    <string name="editor_insert_product_successful">Product saved</string>
+    <string name="editor_insert_product_failed">Error with saving product</string>
+
+    <string name="editor_update_product_successful">Product updated</string>
+    <string name="editor_update_product_failed">Error with updating product</string>
+
+    <string name="editor_delete_product_failed">Error with deleting</string>
+    <string name="editor_delete_product_success">Product deleted</string>
+
+    <string name="button_sale">Sale</string>
+    <string name="button_increase_quantity">+</string>
+    <string name="button_decrease_quantity">-</string>
+
+    <string name="message_no_more_in_stock">No more in Stock, select inventory to order more</string>
+    <string name="message_error_with_update">Error with update</string>
+
+    <string name="tv_category_name">Name</string>
+    <string name="et_hint_product_name">name</string>
+
+    <string name="tv_category_price">Price</string>
+    <string name="et_hint_product_price">price</string>
+    <string name="tv_price_label_unit">Euro</string>
+
+    <string name="tv_category_quantity">Quantity</string>
+    <string name="et_hint_product_quantity">pieces</string>
+
+    <string name="tv_category_supplier_contact">Supplier</string>
+    <string name="et_hint_supplier_contact">email</string>
+
+    <string name="tv_empty_view_title_text">The Inventory is Empty</string>
+    <string name="tv_empty_view_subtitle_text">Start by adding a Product</string>
+
+    <string name="message_unsaved_changes_dialog">Discard your changes and quit editing?</string>
+    <string name="option_discard">Discard</string>
+    <string name="option_keep_editing">Keep Editing</string>
+    <string name="message_delete_dialog">Delete this product?</string>
+    <string name="option_delete">Delete</string>
+    <string name="option_cancel">Cancel</string>
+    <string name="error_no_browser">No browser</string>
+
+    <string name="tv_in_stock">in stock </string>
+
+    <string name="email_order_subject">Order from X.Y Company</string>
+    <string name="email_order_message">Hi,\n I would like to order this product:
+        <xliff:g example="Phone" id="name">%s</xliff:g>.
+        Quantity: 10.\nCheers,\nMr. Smith</string>
 </resources>

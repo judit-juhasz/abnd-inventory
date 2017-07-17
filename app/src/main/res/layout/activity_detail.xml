@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_margin="@dimen/margin_padding_normal"
+    tools:context="name.juhasz.judit.udacity.pinventory.DetailActivity">
+
+    <!-- Name category -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <!-- Label -->
+        <TextView
+            android:layout_width="@dimen/view_zero_width"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="@string/tv_category_name"
+            style="@style/CategoryLabel"/>
+
+        <!-- Name field -->
+        <EditText
+            android:id="@+id/et_product_name"
+            android:layout_height="wrap_content"
+            android:layout_width="@dimen/view_zero_width"
+            android:layout_weight="2"
+            android:hint="@string/et_hint_product_name"
+            android:inputType="textCapWords" />
+
+    </LinearLayout>
+
+    <!-- Price category -->
+    <LinearLayout
+        android:id="@+id/container_price"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <!-- Label -->
+        <TextView
+            android:text="@string/tv_category_price"
+            android:layout_height="wrap_content"
+            android:layout_width="@dimen/view_zero_width"
+            android:layout_weight="1"
+            style="@style/CategoryLabel"/>
+
+        <!-- Input fields -->
+        <RelativeLayout
+            android:layout_height="wrap_content"
+            android:layout_width="@dimen/view_zero_width"
+            android:layout_weight="2"
+            android:paddingLeft="@dimen/padding_item_data">
+
+            <!-- Price field -->
+            <EditText
+                android:id="@+id/et_product_price"
+                android:inputType="numberDecimal"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent" />
+
+            <!-- Units for price (EURO) -->
+            <TextView
+                android:id="@+id/tv_price_label"
+                android:text="@string/tv_price_label_unit"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:layout_alignParentRight="true"
+                android:paddingRight="@dimen/margin_padding_normal"
+                android:paddingTop="@dimen/margin_padding_small"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"/>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <!-- Quantity category -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <!-- Label -->
+        <TextView
+            android:layout_width="@dimen/view_zero_width"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="@string/tv_category_quantity"
+            style="@style/CategoryLabel"/>
+
+        <LinearLayout
+            android:layout_width="@dimen/view_zero_width"
+            android:layout_weight="2"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <!-- Name field -->
+            <EditText
+                android:id="@+id/et_product_quantity"
+                android:layout_height="wrap_content"
+                android:layout_width="@dimen/view_zero_width"
+                android:layout_weight="3"
+                android:inputType="number" />
+
+            <!-- Quantity decrement -->
+            <Button
+                android:id="@+id/b_decrement_quantity"
+                style="@style/QuantityButton"
+                android:text="@string/button_decrease_quantity"
+                android:onClick="decreaseQuantity"/>
+
+            <!-- Quantity increment -->
+            <Button
+                android:id="@+id/b_increment_quantity"
+                style="@style/QuantityButton"
+                android:text="@string/button_increase_quantity"
+                android:onClick="increaseQuantity"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <!-- Supplier contact category -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <!-- Label -->
+        <TextView
+            android:layout_width="@dimen/view_zero_width"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="@string/tv_category_supplier_contact"
+            style="@style/CategoryLabel"/>
+
+        <LinearLayout
+            android:layout_width="@dimen/view_zero_width"
+            android:layout_weight="2"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <!-- Name field -->
+            <EditText
+                android:id="@+id/et_supplier_contact"
+                android:layout_height="wrap_content"
+                android:layout_width="@dimen/view_zero_width"
+                android:layout_weight="4"
+                android:hint="@string/et_hint_supplier_contact"
+                android:inputType="textEmailAddress" />
+
+            <!-- Order Button -->
+            <ImageButton
+                android:id="@+id/ib_order"
+                android:layout_width="@dimen/view_zero_width"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_local_shipping_black_24dp"
+                android:onClick="orderProduct"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <!-- Image category -->
+    <ImageView
+        android:id="@+id/iv_product_image"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:adjustViewBounds="true"
+        android:scaleType="fitCenter"
+        android:layout_marginTop="@dimen/margin_padding_large"/>
+
+</LinearLayout>
